@@ -1,0 +1,25 @@
+// {{camelCase name}} Action
+// --------------------------------------------------------
+
+const ActionType = {
+  SET_YOUR_ACTION: "SET_YOUR_ACTION",
+};
+
+function setAction{{properCase name}}(actionPayload) {
+  return {
+    type: ActionType.SET_YOUR_ACTION,
+    payload: { actionPayload },
+  };
+}
+
+function asyncSet{{properCase name}}Function(actionPayload) {
+  return (dispatch) => {
+    dispatch(setAction{{properCase name}}(actionPayload));
+  };
+}
+
+export {
+  ActionType,
+  setAction{{properCase name}},
+  asyncSet{{properCase name}}Function,
+};

@@ -1,0 +1,30 @@
+// {{ properCase name }} Component
+// --------------------------------------------------------
+
+import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+
+const {{ properCase name }} = ({ propsName }) => {
+  const [example, setExample] = useState(0);
+  // Similar to componentDidMount and componentDidUpdate:
+  useEffect(() => {
+    // Update the document title using the browser API
+    document.title = `You clicked ${example} times`;
+  });
+
+  return (
+    <tag>
+      Functional Component (Stateless Component)
+    </tag>
+  );
+}
+
+{{ properCase name }}.propTypes = {
+propsName: PropTypes.string,
+};
+
+{{ properCase name }}.defaultProps = {
+propsName: '',
+};
+
+export default {{ properCase name }};
